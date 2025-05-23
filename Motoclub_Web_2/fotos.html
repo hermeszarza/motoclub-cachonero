@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motoclub Cachonero</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="script.js"></script>
+  <script src="lightbox.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Asociación Motoclub Cachonero de Galaroza</h1>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section id="fotos">
+      <h2>Galería de imágenes</h2>
+
+      <label for="filtro">Filtrar por categoría:</label>
+      <select id="filtro" onchange="filtrarGaleria()">
+        <option value="todos">Todos</option>
+        <option value="concentración">Concentración Motera</option>
+        <option value="autos">Autos Locos</option>
+        <option value="trial">Trial</option>
+      </select>
+
+      <h2 id="titulo-categoria"></h2>
+      <div class="galeria">
+        <img src="img/Galeria/Motos/1.jpg" alt="concentración 1" data-categoria="concentración" />
+        <img src="img/Galeria/Motos/2.jpg" alt="concentración 2" data-categoria="concentración" />
+        <video controls width="400" data-categoria="concentración">
+          <source src="img/Galeria/Motos/1.mp4" type="video/mp4">
+        </video>
+        <img src="img/Galeria/Motos/3.jpg" alt="concentración 4" data-categoria="concentración" />
+        <img src="img/Galeria/Motos/4.jpg" alt="concentración 5" data-categoria="concentración" />
+        <video controls width="400" data-categoria="concentración">
+          <source src="img/Galeria/Motos/2.mp4" type="video/mp4">
+        </video>
+        <img src="img/Galeria/Motos/8.jpg" alt="concentración 7" data-categoria="concentración" />
+        <video controls width="400" data-categoria="concentración">
+          <source src="img/Galeria/Motos/3.mp4" type="video/mp4">
+        </video>
+        <img src="img/Galeria/Motos/5.jpg" alt="concentración 9" data-categoria="concentración" />
+        <img src="img/Galeria/Motos/6.jpg" alt="concentración 10" data-categoria="concentración" />
+        <img src="img/Galeria/Motos/7.jpg" alt="concentración 11" data-categoria="concentración" />
+        <video controls width="400" data-categoria="concentración">
+          <source src="img/Galeria/Motos/4.mp4" type="video/mp4">
+        </video>
+        <video controls width="400" data-categoria="concentración">
+          <source src="img/Galeria/Motos/5.mp4" type="video/mp4">
+        </video>
+        <img src="img/Galeria/Motos/9.jpg" alt="concentración 14" data-categoria="concentración" />
+
+        <img src="img/Galeria/Autos/2.jpg" alt="autos 1" data-categoria="autos" />
+        <img src="img/Galeria/Autos/1.jpg" alt="autos 2" data-categoria="autos" />
+        <img src="img/Galeria/Autos/3.jpg" alt="autos 3" data-categoria="autos" />
+        <img src="img/Galeria/Autos/4.jpg" alt="autos 4" data-categoria="autos" />
+        <video controls width="400" data-categoria="autos">
+          <source src="img/Galeria/Autos/1.mp4" type="video/mp4">
+        </video>
+
+        <img src="img/Galeria/Trial/1.jpg" alt="trial 1" data-categoria="trial" />
+        <video controls width="400" data-categoria="trial">
+          <source src="img/Galeria/Trial/1.mp4" type="video/mp4">
+        </video>
+        <video controls width="400" data-categoria="trial">
+          <source src="img/Galeria/Trial/2.mp4" type="video/mp4">
+        </video>
+        <video controls width="400" data-categoria="trial">
+          <source src="img/Galeria/Trial/3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <h3>Deja tu Comentarios O Testimonios</h3>
+      <div class="testimonios" id="testimonios">
+        <!-- Comentarios cargados o estáticos aquí -->
+        <blockquote>“Una experiencia increíble, la ruta estuvo perfectamente organizada.” – Laura M.</blockquote>
+        <blockquote>“El encuentro nacional fue genial. Conocí a gente de toda España.” – Carlos G.</blockquote>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>Asociación Motoclub Cachonera de Galaroza &copy; 2025</p>
+  </footer>
+</body>
+
+</html>
